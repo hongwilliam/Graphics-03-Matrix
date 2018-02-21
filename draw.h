@@ -9,6 +9,8 @@ void add_edge( struct matrix * points,
 	       double x0, double y0, double z0,
 	       double x1, double y1, double z1);
 void draw_lines( struct matrix * points, screen s, color c);
-void draw_line(int x0, int y0, int x1, int y1, screen s, color c);
+void draw_line(int x, int y, int x1, int y1, screen s, color c);
+double slope(int x, int y, int x1, int y1);
+int octant(int x, int y, int x1, int y1);
 
 #endif
