@@ -15,7 +15,6 @@ int main() {
   c.green = 0;
   c.blue = 130;
 
-
   printf("\nidentity matrix \n");
   struct matrix *a = new_matrix(3, 3);
   a->lastcol = 3;
@@ -67,15 +66,10 @@ int main() {
   add_edge(edges, 250, 400, 0, 300, 350, 0);
   add_edge(edges, 250, 400, 0, 200, 350, 0);
   add_edge(edges, 200, 350, 0, 300, 350, 0);
-  add_edge(edges, 150, 300, 0, 100, 275, 0);
-  add_edge(edges, 100, 275, 0, 150, 250, 0);
-  add_edge(edges, 150, 300, 0, 150, 250, 0);
-
-
-
+  
 
   draw_lines(edges, s, c);
   display(s);
   free_matrix( edges );
-  save_extension(s, "matrix.png");
+  save_extension(s, "matrix.ppm");
 }
